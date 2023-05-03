@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 16px;
+  }
+
+  /* Activity */
+  .activity .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .activity .item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .activity .item-text {
+    width: 356px;
+  }
+
+  /* Team */
+  .team .list {
+    gap: 24px;
+  }
+
+  .team-personal {
+    width: 264px;
+  }
+
+  /* Customers */
+  .customers-item {
+    flex-basis: calc((100% - 48px) / 4);
+  }
+}

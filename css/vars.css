@@ -1,0 +1,15 @@
+/* Vars */
+:root {
+  --modal-bg-color: #fcfcfc;
+  --main-color-text: #434455;
+  --secondary-color-text: #2e2f42;
+  --third-color-text: #f4f4fd;
+  --alt-color: #ffffff;
+  --alt-secondary-color-text: #4d5ae5;
+  --alt-secondary-color-btn: #404bbf;
+  --secondary-color-btn: #e7e9fc;
+  --main-logo-icon-color: #8e8f99;
+  --secondary-logo-icon-color: #404bbf;
+  --secondary-social-icon-color: #31d0aa;
+  --transition-dur-tfunc: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
