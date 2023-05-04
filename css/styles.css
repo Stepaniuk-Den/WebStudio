@@ -115,67 +115,6 @@ GREEN #31D0AA
 }
 
 /* ==================== Hero ==================== */
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero {
-  padding: 188px 0;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  /* background-color: rgba(46, 47, 66, 0.7); */
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.hero-title {
-  max-width: 496px;
-  color: var(--alt-color);
-
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  /* or 107% */
-
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-
-.hero .btn {
-  display: block;
-  min-width: 169px;
-
-  padding: 16px 32px;
-  border: 0;
-  border-radius: 4px;
-
-  margin-top: 48px;
-  color: var(--alt-color);
-  background-color: var(--alt-secondary-color-text);
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  /* identical to box height, or 150% */
-  letter-spacing: 0.04em;
-
-  transition: background-color var(--transition-dur-tfunc);
-}
-
-.hero .btn:hover,
-.hero .btn:focus {
-  background-color: var(--alt-secondary-color-btn);
-}
 
 /* ==================== Section ==================== */
 
