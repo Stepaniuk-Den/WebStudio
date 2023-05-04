@@ -32,4 +32,35 @@
   .customers-item {
     flex-basis: calc((100% - 48px) / 4);
   }
+
+  /* Footer */
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 24px;
+  }
+
+  .container-logo {
+    margin-left: 92px;
+  }
+
+  .footer .text {
+    width: 264px;
+  }
+
+  .container-footer-subscribe {
+    margin-left: 92px;
+    text-align: left;
+  }
+
+  .form-footer-subscribe {
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
 }
