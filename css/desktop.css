@@ -4,7 +4,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/hero-bg-tablet.jpeg);
+      url(../images/desktop/hero-bg-desktop.jpeg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -14,7 +14,7 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/tablet/hero-bg-tablet@2x.jpeg);
+        url(../images/desktop/hero-bg-desktop@2x.jpeg);
     }
   }
 }
