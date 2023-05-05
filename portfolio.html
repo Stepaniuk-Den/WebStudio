@@ -31,6 +31,11 @@
   <body>
     <header class="header">
       <div class="container">
+        <button type="button" class="mobile-open js-open-menu">
+          <svg class="mobile-icon-open" width="24" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <a class="logo link" href="./index.html"
             >WEB<span class="color">Studio</span></a
@@ -67,7 +72,7 @@
       <section class="section prj">
         <div class="container portfolio">
           <h1 class="hidden">WebStudio Projects</h1>
-          <ul class="list">
+          <ul class="filter-list list">
             <li><button class="filter" type="button">All</button></li>
             <li><button class="filter" type="button">Web Site</button></li>
             <li><button class="filter" type="button">App</button></li>
@@ -92,6 +97,13 @@
                         ./images/tablet/bankapp-tablet@2x.jpeg 2x
                       "
                       media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/bankapp-mobile.jpeg    1x,
+                        ./images/mobile/bankapp-mobile@2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/mobile/bankapp-mobile.jpg"
@@ -130,6 +142,13 @@
                       "
                       media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/mobile/cashpay-mobile.jpg     1x,
+                        ./images/mobile/cashpay-mobile@2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       src="./images/mobile/cashpay-mobile.jpg"
                       alt="Cashless Payment"
@@ -165,6 +184,13 @@
                         ./images/tablet/medapp-tablet@2x.jpeg 2x
                       "
                       media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/medapp-mobile.jpg     1x,
+                        ./images/mobile/medapp-mobile@2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/mobile/medapp-mobile.jpg"
@@ -202,6 +228,13 @@
                       "
                       media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/mobile/taxiserv-mobile.jpg     1x,
+                        ./images/mobile/taxiserv-mobile@2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       src="./images/mobile/taxiserv-mobile.jpg"
                       alt="Taxi Service"
@@ -237,6 +270,13 @@
                         ./images/tablet/screenill-tablet@2x.jpeg 2x
                       "
                       media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/screenill-mobile.jpg     1x,
+                        ./images/mobile/screenill-mobile@2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/mobile/screenill-mobile.jpg"
@@ -274,6 +314,13 @@
                       "
                       media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/mobile/onlinecourse-mobile.jpg     1x,
+                        ./images/mobile/onlinecourse-mobile@2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       src="./images/mobile/onlinecourse-mobile.jpg"
                       alt="Online Courses"
@@ -309,6 +356,13 @@
                         ./images/tablet/instastories-tablet@2x.jpeg 2x
                       "
                       media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/instastories-mobile.jpg     1x,
+                        ./images/mobile/instastories-mobile@2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/mobile/instastories-mobile.jpg"
@@ -346,6 +400,13 @@
                       "
                       media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/mobile/orgfood-mobile.jpg     1x,
+                        ./images/mobile/orgfood-mobile@2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       src="./images/mobile/orgfood-mobile.jpg"
                       alt="Organic Food"
@@ -381,6 +442,13 @@
                         ./images/tablet/frcoffee-tablet@2x.jpeg 2x
                       "
                       media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/frcoffee-mobile.jpg     1x,
+                        ./images/mobile/frcoffee-mobile@2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/mobile/frcoffee-mobile.jpg"
@@ -480,5 +548,90 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <button type="button" class="mobile-close js-close-menu">
+        <svg class="mobile-icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+      <ul class="mobile-list list">
+        <li class="mobile-item">
+          <a class="mobile-menu-link menu link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-item">
+          <a
+            class="mobile-menu-link menu link curr-page"
+            href="./portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li class="mobile-item">
+          <a class="mobile-menu-link menu link" href="#">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-contact-list list">
+        <li class="mobile-contact-item">
+          <a class="mobile-contact-link link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-contact-item email">
+          <a class="mobile-contact-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-list list">
+        <li class="mobile-social-item social-item">
+          <a
+            class="mobile-social-link social-links"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item social-item">
+          <a
+            class="mobile-social-link social-links"
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item social-item">
+          <a
+            class="mobile-social-link social-links"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item social-item">
+          <a
+            class="mobile-social-link social-links"
+            href="https://linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
