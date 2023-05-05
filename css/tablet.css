@@ -130,7 +130,7 @@
   }
   /* Team */
   .team .list {
-    gap: 24px;
+    gap: 64px 24px;
   }
 
   .team-personal {
