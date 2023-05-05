@@ -29,8 +29,14 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
+        <button type="button" class="mobile-open js-open-menu">
+          <svg class="mobile-icon-open" width="24" height="24">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+            <!-- <use href="./images/icons.svg#icon-close-modal"></use> -->
+          </svg>
+        </button>
         <nav class="nav">
           <a class="logo link" href="./index.html"
             >WEB<span class="color">Studio</span></a
@@ -60,7 +66,7 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Hero -->
       <section class="hero">
@@ -133,13 +139,28 @@
           <h2 class="section-title">What Are We Doing</h2>
           <ul class="list">
             <li class="image">
-              <img src="./images/imac.jpg" alt="imac" width="360" />
+              <img
+                src="./images/imac.jpg"
+                alt="imac"
+                width="360"
+                srcset="./images/imac.jpg 1x, ./images/imac@2x.jpeg 2x"
+              />
             </li>
             <li class="image">
-              <img src="./images/iphone.jpg" alt="iphone" width="360" />
+              <img
+                src="./images/iphone.jpg"
+                alt="iphone"
+                width="360"
+                srcset="./images/iphone.jpg 1x, ./images/iphone@2x.jpeg 2x"
+              />
             </li>
             <li class="image">
-              <img src="./images/macbook.jpg" alt="macbook" width="360" />
+              <img
+                src="./images/macbook.jpg"
+                alt="macbook"
+                width="360"
+                srcset="./images/macbook.jpg 1x, ./images/macbook@2x.jpeg 2x"
+              />
             </li>
           </ul>
         </div>
@@ -150,7 +171,12 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-personal">
-              <img src="./images/card1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                src="./images/card1.jpg"
+                alt="Mark Guerrero"
+                width="264"
+                srcset="./images/card1.jpg 1x, ./images/card1@2x.jpeg 2x"
+              />
               <div class="data">
                 <h3 class="list-title">Mark Guerrero</h3>
                 <p class="prof">Product Designer</p>
@@ -207,7 +233,12 @@
               </div>
             </li>
             <li class="team-personal">
-              <img src="./images/card2.jpg" alt="Tom Ford" width="264" />
+              <img
+                src="./images/card2.jpg"
+                alt="Tom Ford"
+                width="264"
+                srcset="./images/card2.jpg 1x, ./images/card2@2x.jpeg 2x"
+              />
               <div class="data">
                 <h3 class="list-title">Tom Ford</h3>
                 <p class="prof">Frontend Developer</p>
@@ -260,7 +291,12 @@
               </div>
             </li>
             <li class="team-personal">
-              <img src="./images/card3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                src="./images/card3.jpg"
+                alt="Camila Garcia"
+                width="264"
+                srcset="./images/card3.jpg 1x, ./images/card3@2x.jpeg 2x"
+              />
               <div class="data">
                 <h3 class="list-title">Camila Garcia</h3>
                 <p class="prof">Marketing</p>
@@ -313,7 +349,12 @@
               </div>
             </li>
             <li class="team-personal">
-              <img src="./images/card4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                src="./images/card4.jpg"
+                alt="Daniel Wilson"
+                width="264"
+                srcset="./images/card4.jpg 1x, ./images/card4@2x.jpeg 2x"
+              />
               <div class="data">
                 <h3 class="list-title">Daniel Wilson</h3>
                 <p class="prof">UI Designer</p>
@@ -552,6 +593,14 @@
         </form>
       </div>
     </div>
+    <div class="mobile-menu js-menu-container">
+      <button type="button" class="mobile-close js-close-menu">
+        <svg class="mobile-icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
