@@ -113,6 +113,23 @@
   border-radius: 50%;
   border: 1px solid #2e2f42;
   background-color: var(--secondary-color-btn);
+
+  transition: fill var(--transition-dur-tfunc),
+    background-color var(--transition-dur-tfunc);
+}
+
+.mobile-close:active,
+.mobile-close:hover {
+  background-color: var(--alt-secondary-color-btn);
+}
+
+.mobile-icon-close {
+  transition: fill var(--transition-dur-tfunc);
+}
+
+.mobile-close:active .mobile-icon-close,
+.mobile-close:hover .mobile-icon-close {
+  fill: var(--alt-color);
 }
 
 .is-open {
@@ -413,9 +430,6 @@
   flex-direction: column;
   align-items: center;
   gap: 72px;
-}
-
-.container-logo {
 }
 
 .footer .logo {

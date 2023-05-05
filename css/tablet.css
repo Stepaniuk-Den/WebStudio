@@ -125,6 +125,9 @@
     width: 356px;
   }
 
+  .activity .item-title {
+    text-align: left;
+  }
   /* Team */
   .team .list {
     gap: 24px;
@@ -141,18 +144,23 @@
 
   /* Footer */
   .footer .container {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
   }
 
   .container-logo {
     margin-left: 92px;
+    text-align: left;
   }
 
   .footer .text {
     width: 264px;
+  }
+
+  .container-footer-social {
+    /* margin-left: 120px; */
+    text-align: left;
   }
 
   .container-footer-subscribe {
