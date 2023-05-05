@@ -184,7 +184,6 @@
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  /* identical to box height, or 117% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -245,10 +244,8 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  /* or 111% */
-
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
   text-transform: capitalize;
 }
 
@@ -268,7 +265,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
   letter-spacing: 0.04em;
 
   transition: background-color var(--transition-dur-tfunc);
@@ -281,12 +277,11 @@
 
 /* Activity */
 .activity .list {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
-.activity .item {
-  margin-bottom: 72px;
-}
 .activity .item-text {
   width: 100%;
   text-align: left;
@@ -298,7 +293,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  /* identical to box height, or 111% */
+
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -443,8 +438,6 @@
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  /* identical to box height, or 117% */
-
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -464,8 +457,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
-
   letter-spacing: 0.02em;
 
   color: var(--alt-color);
@@ -512,10 +503,10 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 24px;
   align-items: center;
   justify-content: center;
   width: 100%;
+  gap: 24px;
 }
 
 .footer-input-item {
@@ -614,7 +605,8 @@
 
 .modal {
   position: absolute;
-  width: 408px;
+  width: 100%;
+  min-width: 320px;
   min-height: 584px;
   top: 50%;
   left: 50%;
@@ -669,6 +661,8 @@
 }
 
 .modal-toptext {
+  min-width: 320px;
+  width: 100%;
   margin-top: 72px;
   text-align: center;
 
@@ -938,14 +932,30 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 420px) {
+  .mobile-social-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    margin-right: 40px;
+  }
+
+  .mobile-contact-link {
+    margin-right: 40px;
+  }
+}
+
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
   }
 
+  .modal {
+    width: 408px;
+  }
+
   .mobile-menu {
     width: 428px;
-    height: 796px;
   }
 }
 @media screen and (max-width: 767px) {
