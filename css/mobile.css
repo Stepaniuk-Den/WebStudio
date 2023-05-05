@@ -944,6 +944,10 @@
   .mobile-contact-link {
     margin-right: 40px;
   }
+
+  .mobile-contact-list {
+    font-size: calc((100vw - 320px) / (430 - 320) * (36 - 20) + 20px);
+  }
 }
 
 @media screen and (min-width: 428px) {
